@@ -101,7 +101,13 @@ export default function Textbox(props) {
   // use state to update the text when the text changes
   const [text, setText] = useState('Enter text here')
 
-  const lineCount = text.split('\n').length;
+  let lineCount = text.trim().split(/\n+/).length;
+  if (text !== '') {
+    lineCount =text.trim().split(/\n+/).length;
+  }
+  else{
+    lineCount = 0;
+  }
 
   return (
     <>
@@ -122,7 +128,7 @@ export default function Textbox(props) {
      </div>
       <div className="container my-3" style={{color: props.mode=== 'dark'? 'white':'#042743'}}>
         <h2>Text Analysis</h2>
-        <p>Characters: {text.length}  | Words: {(text.match(/\b\w+\b/g) || []).length} | Sentence Count: {text.split(". ").length-1} | Line Count: {lineCount}</p>
+        <p>Characters: {text.trim().length}  | Words: {(text.match(/\b\w+\b/g) || []).length} | Sentence Count: {text.match(/[^\.!?]*[\.!?]/g)?.length || 0} | Line Count: {lineCount}</p>
         <p>{0.008 * text.split(" ").length} Minutes to Read Text</p>
         <h2>Preview</h2>
         <p>{text.length>0?text:"Enter some text above in the textbox to preview somthing here"}</p>
