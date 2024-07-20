@@ -8,7 +8,7 @@ export default function About() {
             fontFamily: 'Arial',
             padding: '20px',
             borderRadius: '5px',
-            marginBottom: '10px',    
+            // marginBottom: '10px',    
     })
 
     const [btntext, setBtntext] = useState('Enable Light Mode')
@@ -21,7 +21,7 @@ export default function About() {
                 fontFamily: 'Arial',
                 padding: '20px',
                 borderRadius: '5px',
-                marginBottom: '10px',
+                // marginBottom: '10px',
             })
             setBtntext('Enable Dark Mode')
         }
@@ -32,7 +32,7 @@ export default function About() {
                 fontFamily: 'Arial',
                 padding: '20px',
                 borderRadius: '5px',
-                marginBottom: '10px',
+                // marginBottom: '10px',
             })
             setBtntext('Enable Light Mode')
         }
@@ -44,7 +44,7 @@ export default function About() {
         <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">
             <button className="accordion-button" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
+                TextUtils History
             </button>
             </h2>
             <div id="collapseOne" className="accordion-collapse collapse show" style={myStyle} aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -56,7 +56,7 @@ export default function About() {
         <div className="accordion-item">
             <h2 className="accordion-header" id="headingTwo">
             <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+                Benefits of using TextUtils
             </button>
             </h2>
             <div id="collapseTwo" className="accordion-collapse collapse" style={myStyle} aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -68,7 +68,7 @@ export default function About() {
         <div className="accordion-item">
             <h2 className="accordion-header" id="headingThree">
             <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+                Utilites
             </button>
             </h2>
             <div id="collapseThree" className="accordion-collapse collapse" style={myStyle} aria-labelledby="headingThree" data-bs-parent="#accordionExample">
