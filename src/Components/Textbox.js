@@ -117,14 +117,14 @@ export default function Textbox(props) {
         <div className="mb-3">
             <textarea className="form-control" id="text" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode=== 'dark'? '#042743':'white', color: props.mode=== 'dark'? 'white': '#042743'}}  rows="8"></textarea>
         </div>
-        <button className="btn btn-primary me-2" onClick={handleUpClick}>Convert to UpperCase</button>
-        <button className="btn btn-primary me-2" onClick={handleLoClick}>Convert to LowerCase</button>
-        <button className="btn btn-primary me-2" onClick={handleCapClick}>Capitalize Case</button>
-        <button className="btn btn-primary me-2" onClick={handleInvClick}>inVERSE CaSe</button>
-        <button className="btn btn-primary me-2" onClick={handleClipClick}>Copy to ClipBoard</button>
-        <button className="btn btn-primary me-2" onClick={handleDownClick}>Download Text</button>
-        <button className="btn btn-primary me-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
-        <button className="btn btn-primary me-2" onClick={clearText}>Clear Text</button>
+        <button className="btn btn-primary me-2 my-2" onClick={handleUpClick}>Convert to UpperCase</button>
+        <button className="btn btn-primary me-2 my-2" onClick={handleLoClick}>Convert to LowerCase</button>
+        <button className="btn btn-primary me-2 my-2" onClick={handleCapClick}>Capitalize Case</button>
+        <button className="btn btn-primary me-2 my-2" onClick={handleInvClick}>inVERSE CaSe</button>
+        <button className="btn btn-primary me-2 my-2" onClick={handleClipClick}>Copy to ClipBoard</button>
+        <button className="btn btn-primary me-2 my-2" onClick={handleDownClick}>Download Text</button>
+        <button className="btn btn-primary me-2 my-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
+        <button className="btn btn-primary me-2 my-2" onClick={clearText}>Clear Text</button>
      </div>
       <div className="container my-3" style={{color: props.mode=== 'dark'? 'white':'#042743'}}>
         <h2>Text Analysis</h2>
